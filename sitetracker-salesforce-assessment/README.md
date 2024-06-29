@@ -46,7 +46,7 @@ Notes:
 * Ensure the chromedriver path in your script is correctly pointing to the location of the chromedriver executable on your machine.
 * Adjust the XPath locators according to the actual elements in your Salesforce sandbox as they might differ.
 
-Test Scenarios
+Test Scenarios :
 The automated test scenarios include:
 1. Login to Salesforce
     * Opens the Salesforce login page and logs in using provided credentials.
