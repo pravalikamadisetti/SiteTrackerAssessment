@@ -28,10 +28,12 @@ Created a Maven project and added the dependencies for the required libraries ot
     - Add the Selenium Java and TestNG JAR files
 
 4. **Update `chromedriver` path**:
-    - In `SalesforceAutomationTests.java`, update the path to the `chromedriver` executable.
+    - In `SiteTrackerSalesforceAppAssessmentTest.java`, update the path to the `chromedriver` executable.
 
 5. **Run the tests**:
-    - Right-click on `SalesforceAutomationTests` class > Run As > TestNG Test
+    - Refer to the package com.example.salesforce_automation (under src/test/java),right-click on `SiteTrackerSalesforceAppAssessmentTest` class > Run As > TestNG Test
+    - Project folder structure
+      src -
 
 ## Execution Instructions
 - Ensure that the ChromeDriver version matches the installed Google Chrome browser version.
