@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-28T19:20:37 EDT" name="Default suite" finished-at="2024-06-28T19:27:16 EDT" duration-ms="398704">
+    <groups>
+    </groups>
+    <test started-at="2024-06-28T19:20:37 EDT" name="Default test" finished-at="2024-06-28T19:27:16 EDT" duration-ms="398704">
+      <class name="com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest@e056f20]" started-at="2024-06-28T19:20:37 EDT" name="setUp" finished-at="2024-06-28T19:20:44 EDT" duration-ms="6776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginToSalesforce()[pri:1, instance:com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest@e056f20]" started-at="2024-06-28T19:20:44 EDT" name="loginToSalesforce" finished-at="2024-06-28T19:22:16 EDT" duration-ms="92427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSalesforce -->
+        <test-method signature="navigateAndInteract()[pri:2, instance:com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest@e056f20]" started-at="2024-06-28T19:22:16 EDT" name="navigateAndInteract" finished-at="2024-06-28T19:24:02 EDT" depends-on-methods="com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest.loginToSalesforce" duration-ms="105616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateAndInteract -->
+        <test-method signature="leadInteractionAndTaskCreation()[pri:3, instance:com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest@e056f20]" started-at="2024-06-28T19:24:02 EDT" name="leadInteractionAndTaskCreation" finished-at="2024-06-28T19:26:00 EDT" depends-on-methods="com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest.navigateAndInteract" duration-ms="118753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leadInteractionAndTaskCreation -->
+        <test-method signature="activityTabAndTaskValidation()[pri:4, instance:com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest@e056f20]" started-at="2024-06-28T19:26:00 EDT" name="activityTabAndTaskValidation" finished-at="2024-06-28T19:26:47 EDT" depends-on-methods="com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest.leadInteractionAndTaskCreation" duration-ms="46574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activityTabAndTaskValidation -->
+        <test-method signature="filterAndDisplayAdjustments()[pri:5, instance:com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest@e056f20]" started-at="2024-06-28T19:26:47 EDT" name="filterAndDisplayAdjustments" finished-at="2024-06-28T19:27:15 EDT" depends-on-methods="com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest.activityTabAndTaskValidation" duration-ms="28368" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c53eed6e36e606d93a6643ccd992896, isElementDisplayed {id=f.3F1D26D4B27E58E0EEDA8543D5ADA253.d.AA10A149181F8DD7EEF9E7F6191380DC.e.581}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.62 (b2781ca4c383..., userDataDir: /var/folders/dj/tpy6ngnx2j7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50698}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50698/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (1c53eed6e36e606d93a6643ccd992896)] -> xpath: //a[text()='Create Budget Plan']]
+Session ID: 1c53eed6e36e606d93a6643ccd992896]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c53eed6e36e606d93a6643ccd992896, isElementDisplayed {id=f.3F1D26D4B27E58E0EEDA8543D5ADA253.d.AA10A149181F8DD7EEF9E7F6191380DC.e.581}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.62 (b2781ca4c383..., userDataDir: /var/folders/dj/tpy6ngnx2j7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50698}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50698/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (1c53eed6e36e606d93a6643ccd992896)] -> xpath: //a[text()='Create Budget Plan']]
+Session ID: 1c53eed6e36e606d93a6643ccd992896
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+at com.example.pages.TasksPage.showAllActivitiesAndValidateTasks(TasksPage.java:131)
+at com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest.filterAndDisplayAdjustments(SiteTrackerSalesforceAppAssessmentTest.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterAndDisplayAdjustments -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest@e056f20]" started-at="2024-06-28T19:27:15 EDT" name="tearDown" finished-at="2024-06-28T19:27:16 EDT" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.salesforce_automation.SiteTrackerSalesforceAppAssessmentTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Salesforce Automation Suite">
+    <test name="Salesforce Tests">
+        <classes>
+            <class name="com.example.salesforce.LoginTest"/>
+            <class name="com.example.salesforce.NavigateAndInteractTest"/>
+            <class name="com.example.salesforce.LeadInteractionAndTaskCreationTest"/>
+            <class name="com.example.salesforce.ActivityTabAndTaskValidationTest"/>
+        </classes>
+    </test>
+</suite>
