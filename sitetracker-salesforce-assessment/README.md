@@ -13,7 +13,7 @@ This project contains Selenium WebDriver automation scripts for automating Sales
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-repo/salesforce-automation.git
+    git clone https://github.com/pravalikamadisetti/SiteTrackerAssessment.git
     ```
 
 2. **Open the project in Eclipse**:
